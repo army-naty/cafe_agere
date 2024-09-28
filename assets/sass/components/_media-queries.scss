@@ -1,0 +1,64 @@
+// components/_media-queries.scss
+@import '../abstracts/variables';
+
+@include media('laptop') {
+    .block {
+        padding-top: $padding-small;
+    }
+    .block__element {
+        font-size: $font-medium;
+    }
+    .box__block {
+        font-size: $font-xsmall;
+    }
+    .main-content__right-img {
+        height: 60%;
+    }
+    .main-content__left-title {
+        padding: $padding-medium 0 0 3.125rem;
+    }
+    .main-content__left-text {
+        padding: 0.625rem 1.25rem 0 3.125rem;
+    }
+
+    .overlay-container--1 {
+        height: 7.1875rem; 
+        width: 25.625rem; 
+        left: calc(50% - 3.125rem); 
+        top: calc(50% + 2.5rem); 
+    }
+    .overlay1__box {
+        font-size: $font-xsmall;
+    }
+    .overlay-container--2 {
+        left: calc(50% - 3.125rem); 
+        top: calc(50% + 12.5rem); 
+        height: 12.8125rem; 
+        width: 25.625rem; 
+    }
+    .overlay-container--3 {
+        left: calc(50% - 6.25rem); 
+        top: calc(50% + 14.0625rem); 
+        width: 21.875rem; 
+        height: 10rem; 
+    }
+    .overlay-container--4 {
+        left: calc(50% + 13.125rem); 
+        top: calc(50% + 2.5rem); 
+        height: 7.1875rem; 
+        width: 7.1875rem; 
+    }
+    .overlay-container--5 {
+        left: calc(50% + 12.5rem); 
+        top: calc(50% + 0.625rem); 
+        height: 7.1875rem; 
+        width: 7.1875rem; 
+    }
+    .overlay-container--6 {
+        left: calc(50% + 10rem); 
+        top: calc(50% + 10.6875rem); 
+        height: 9.375rem; 
+        width: 4.6875rem; 
+    }
+    
+}

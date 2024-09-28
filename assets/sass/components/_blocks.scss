@@ -1,0 +1,25 @@
+// components/_blocks.scss
+.block {
+    padding: $padding-medium;
+
+    &__element {
+        display: block;
+        font-size: $font-large;
+    }
+
+    &-box {
+        display: block;
+    }
+}
+
+.overlay1__box {
+    background-color: $color-white;
+    color: $color-black;
+    text-align: left;
+    font-size: $font-small;
+}
+
+.overlay5__icon {
+    color: $color-white;
+    font-size: $font-icon;
+}

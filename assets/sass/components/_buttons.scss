@@ -1,0 +1,34 @@
+// _buttons.scss
+
+@import '../abstracts/variables'; // Asegúrate de importar el archivo de variables
+@import '../abstracts/mixins';    // Asegúrate de importar el archivo de mixins
+
+// Botón primario
+.button--primary {
+    @include button-styles($btn-primary-color); // Usa el mixin con el color primario
+    outline: 0.0625rem solid $color-black;
+    &:hover {
+        color: $color-grey;
+        outline: 0.0625rem solid $color-grey;
+        // background-color: darken($btn-primary-color, 10%); // Sombreado en hover
+    }
+
+    &:focus {
+        color: $color-grey;
+        outline: 0.0625rem solid $color-grey;
+    }
+}
+
+// Botón secundario
+.button--secondary {
+    @include button-styles($btn-secondary-color); 
+    &:hover {
+        background-color: $turquoise-green;
+        color: $color-white;
+    }
+
+    &:focus {
+        color: $color-black;
+        outline: 0.0625rem solid $color-grey;
+    }
+}
